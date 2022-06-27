@@ -18,10 +18,6 @@ substring = "1.4"
 [dev-dependencies]
 criterion = "0.3.5"
 
-# Prevents minimal-versions from failing on CI (windows)
-[target.'cfg(windows)'.dependencies]
-winapi = "0.3"
-
 [[bench]]
 name = "bench"
 harness = false
