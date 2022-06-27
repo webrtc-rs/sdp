@@ -72,6 +72,7 @@ jobs:
         # TODO: add 'windows-latest' once criterion#atty version is upgraded
         # "0.2" min version (0.2.0) depends on winapi-0.2.4 which does not
         # compile on nightly.
+        # https://github.com/bheisler/criterion.rs/pull/587
         os: ['ubuntu-latest', 'macos-latest']
     runs-on: ${{ matrix.os }}
     steps:
